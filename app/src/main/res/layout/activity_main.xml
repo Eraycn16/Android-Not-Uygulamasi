@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/deep_sky">
+
+    <ImageView
+        android:id="@+id/iconMain"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/icon2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iconMain"
+        android:layout_marginLeft="20dp"
+        android:text="NOTE APP"
+        android:textSize="50dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"></TextView>
+
+    <EditText
+        android:id="@+id/notBaslik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Not Başlığı.."
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/iconMain"
+        android:layout_marginRight="15dp"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/black">
+    </EditText>
+
+    <EditText
+        android:id="@+id/notIcerik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notBaslik"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:hint="Not içeriği giriniz.."
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/black"
+        >
+    </EditText>
+
+    <CheckBox
+        android:id="@+id/control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notIcerik"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:text="Notu eklemeyi kabul ediyor musunuz?">
+    </CheckBox>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/control"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:background="@color/indian"
+        android:textStyle="bold"
+        android:text="EKLE"
+        android:textSize="20dp"
+        >
+    </Button>
+
+    <Button
+        android:id="@+id/btnList"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAdd"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:text="LISTELE"
+        android:textStyle="bold"
+        android:background="@color/indian"
+        android:textSize="20dp"
+        >
+    </Button>
+
+</RelativeLayout>
